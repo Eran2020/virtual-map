@@ -4,7 +4,9 @@
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-
+    #WOWimg, map area{
+            outline:none;
+        }
     </style>
 </head>
 
@@ -261,6 +263,7 @@
                 'WG.png',
                 'ZD.png'
             ]);
+            console.log("loaded western/northern images");
             jQuery(document).ready(function() {
                 $("#isles_qd").mouseover(function() {
                     $("#WOWimg").attr("src", "isles_qd.png");
@@ -552,6 +555,7 @@
             'UC.png',
             'ws.png'
         );
+        console.log("loaded western images");
         jQuery(document).ready(function () {
             $("#AI").mouseover(function () {
                 $("#WOWimg").attr("src", image[1].src);
