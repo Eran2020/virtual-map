@@ -7,137 +7,115 @@
         height:100%;
         margin: 0;
     }
-    .container {
-        position: relative;
-        text-align: center;
-        color: white;
-    }
-    .top-left {
-        position: absolute;
-        top: 500px;
-        left: 16px;
-    }
     </style>
 </head>
 
 <body>
-    <div class="container">
-        <img id="WOWimg" src="cp54dlegl1w21.jpg" alt="World of Warcraft Map" usemap="#WOWmap" style="width:1600px; height:900px" onmousemove="showCoords(event)">
-        <map name="WOWmap" onmousemove="showCoords(event)">
-            <area shape="poly" title="Isle of Quel'Danas" id="isles_qd" target="_blank" onmouseover onmouseout coords="1321,201, 1332,201, 1344,158, 1339,151, 1310,151, 1304,161, 1306,173, 1316,181" href="https://wow.gamepedia.com/Isle_of_Quel%27Danas">
+    <img id="WOWimg" src="cp54dlegl1w21.jpg" alt="World of Warcraft Map" usemap="#WOWmap" style="width:1600px; height:900px" onmousemove="showCoords(event)">
+    <map name="WOWmap" onmousemove="showCoords(event)">
+        <area shape="poly" title="Isle of Quel'Danas" id="isles_qd" target="_blank" onmouseover onmouseout coords="1321,201, 1332,201, 1344,158, 1339,151, 1310,151, 1304,161, 1306,173, 1316,181" href="https://wow.gamepedia.com/Isle_of_Quel%27Danas">
 
-            <area shape="poly" title="Quel'Thalas" id="qt" target="_blank" onmouseover onmouseout coords="1319,220, 1313,211, 1300,205, 1292,209, 1290,229, 1296,231, 1302,226, 1309,227,
-             1294,245, 1283,269, 1287,276, 1322,281, 1365,277, 1367,258, 1373,251, 1351,217, 1344,214" href="https://wow.gamepedia.com/Quel%27Thalas">
+        <area shape="poly" title="Quel'Thalas" id="qt" target="_blank" onmouseover onmouseout coords="1319,220, 1313,211, 1300,205, 1292,209, 1290,229, 1296,231, 1302,226, 1309,227,
+            1294,245, 1283,269, 1287,276, 1322,281, 1365,277, 1367,258, 1373,251, 1351,217, 1344,214" href="https://wow.gamepedia.com/Quel%27Thalas">
 
-            <area shape="poly" title="Zul'Aman" id="za" target="_blank" onmouseover onmouseout coords="1292,278, 1292,289, 1285,287, 1284,337, 1293,341, 1330,334, 1347,354, 1362,360, 1368,372,
-            1376,350, 1381,345, 1397,343, 1407,311, 1389,302, 1373,290, 1366,276, 1333,281, 1319,284" href="https://wow.gamepedia.com/Zul%27Aman">
+        <area shape="poly" title="Zul'Aman" id="za" target="_blank" onmouseover onmouseout coords="1292,278, 1292,289, 1285,287, 1284,337, 1293,341, 1330,334, 1347,354, 1362,360, 1368,372,
+        1376,350, 1381,345, 1397,343, 1407,311, 1389,302, 1373,290, 1366,276, 1333,281, 1319,284" href="https://wow.gamepedia.com/Zul%27Aman">
 
-            <area shape="poly" title="Eastern Plaguelands" id="ep" target="_blank" onmouseover onmouseout coords="1332,338, 1301,342, 1270,339, 1258,342, 1277,393, 1284,394, 1290,406, 1342,410, 1366,405, 1372,391, 1370,369" href="https://wow.gamepedia.com/Eastern_Plaguelands">
+        <area shape="poly" title="Eastern Plaguelands" id="ep" target="_blank" onmouseover onmouseout coords="1332,338, 1301,342, 1270,339, 1258,342, 1277,393, 1284,394, 1290,406, 1342,410, 1366,405, 1372,391, 1370,369" href="https://wow.gamepedia.com/Eastern_Plaguelands">
 
-            <area shape="poly" title="Western Plaguelands" id="wp" target="_blank" onmouseover onmouseout coords="1257,344, 1233,347, 1221,364, 1231,364, 1239,374, 1228,387, 1233,398, 1248,407, 1275,393, 1269,373" href="https://wow.gamepedia.com/Western_Plaguelands">
+        <area shape="poly" title="Western Plaguelands" id="wp" target="_blank" onmouseover onmouseout coords="1257,344, 1233,347, 1221,364, 1231,364, 1239,374, 1228,387, 1233,398, 1248,407, 1275,393, 1269,373" href="https://wow.gamepedia.com/Western_Plaguelands">
 
-            <area shape="poly" title="Caer Darrow" id="cd" target="_blank" onmouseover onmouseout coords="1277,393, 1260,401, 1265,409, 1273,411, 1287,409, 1285,398" href="https://wow.gamepedia.com/Caer_Darrow">
+        <area shape="poly" title="Caer Darrow" id="cd" target="_blank" onmouseover onmouseout coords="1277,393, 1260,401, 1265,409, 1273,411, 1287,409, 1285,398" href="https://wow.gamepedia.com/Caer_Darrow">
 
-            <area shape="poly" title="Hinterlands" id="hl" target="_blank" onmouseover onmouseout coords="1350,409, 1340,412, 1332,421, 1330,447, 1324,457, 1294,449, 1281,453, 1247,428, 1265,410, 1287,410" href="https://wow.gamepedia.com/Hinterlands">
+        <area shape="poly" title="Hinterlands" id="hl" target="_blank" onmouseover onmouseout coords="1350,409, 1340,412, 1332,421, 1330,447, 1324,457, 1294,449, 1281,453, 1247,428, 1265,410, 1287,410" href="https://wow.gamepedia.com/Hinterlands">
 
-            <area shape="poly" title="Tirisfal Glades" id="tf" target="_blank" onmouseover onmouseout coords="1219,356, 1202,357, 1195,351, 1177,355, 1175,369, 1163,363, 1138,373, 1137,392, 1146,403,
-            1160,404, 1224,397, 1237,375" href="https://wow.gamepedia.com/Tirisfal_Glades">
+        <area shape="poly" title="Tirisfal Glades" id="tf" target="_blank" onmouseover onmouseout coords="1219,356, 1202,357, 1195,351, 1177,355, 1175,369, 1163,363, 1138,373, 1137,392, 1146,403,
+        1160,404, 1224,397, 1237,375" href="https://wow.gamepedia.com/Tirisfal_Glades">
 
-            <area shape="poly" title="Arathi Highlands" id="ah" target="_blank" onmouseover onmouseout coords="1333,437, 1312,495, 1257,495, 1237,476, 1259,447, 1282,457, 1298,451" href="https://wow.gamepedia.com/Arathi_Highlands">
+        <area shape="poly" title="Arathi Highlands" id="ah" target="_blank" onmouseover onmouseout coords="1333,437, 1312,495, 1257,495, 1237,476, 1259,447, 1282,457, 1298,451" href="https://wow.gamepedia.com/Arathi_Highlands">
 
-            <area shape="poly" title="Silverpine Forest+Hillsbrad" id="sfhb" target="_blank" onmouseover onmouseout coords="1156,404, 1158,433, 1167,449, 1195,462, 1212,466, 1229,461, 1238,471, 1264,410, 1220,400, 1210,415,
-            1200,420, 1195,425, 1182,415, 1182,404" href="https://wow.gamepedia.com/Silverpine_Forest">
+        <area shape="poly" title="Silverpine Forest+Hillsbrad" id="sfhb" target="_blank" onmouseover onmouseout coords="1156,404, 1158,433, 1167,449, 1195,462, 1212,466, 1229,461, 1238,471, 1264,410, 1220,400, 1210,415,
+        1200,420, 1195,425, 1182,415, 1182,404" href="https://wow.gamepedia.com/Silverpine_Forest">
 
-            <area shape="poly" title="Fenris Isle" id="fi" target="_blank" onmouseover onmouseout coords="1208,415, 1206,406, 1190,407, 1192,416, 1198,420" href="https://wow.gamepedia.com/Fenris_Isle">
+        <area shape="poly" title="Fenris Isle" id="fi" target="_blank" onmouseover onmouseout coords="1208,415, 1206,406, 1190,407, 1192,416, 1198,420" href="https://wow.gamepedia.com/Fenris_Isle">
 
-            <area shape="poly" title="Gilneas" id="g" target="_blank" onmouseover onmouseout coords="1164,450, 1141,454, 1137,480, 1157,498, 1180,499, 1192,480, 1188,466" href="https://wow.gamepedia.com/Gilneas_(kingdom)">
+        <area shape="poly" title="Gilneas" id="g" target="_blank" onmouseover onmouseout coords="1164,450, 1141,454, 1137,480, 1157,498, 1180,499, 1192,480, 1188,466" href="https://wow.gamepedia.com/Gilneas_(kingdom)">
 
-            <area shape="poly" title="Kul'Tiras" id="kt" target="_blank" onmouseover onmouseout coords="1078,462, 1101,472, 1098,486, 1115,496, 1109,514, 1084,515, 1078,495, 1070,487" href="https://wow.gamepedia.com/Kul_Tiras">
-            
-            <area shape="poly" title="Thandol Valley" id="tv" target="_blank" onmouseover onmouseout coords="1254,498, 1309,499, 1327,516, 1311,541, 1274,553, 1231,539, 1234,508" href="https://wow.gamepedia.com/Thandol_Valley">
+        <area shape="poly" title="Kul'Tiras" id="kt" target="_blank" onmouseover onmouseout coords="1078,462, 1101,472, 1098,486, 1115,496, 1109,514, 1084,515, 1078,495, 1070,487" href="https://wow.gamepedia.com/Kul_Tiras">
+        
+        <area shape="poly" title="Thandol Valley" id="tv" target="_blank" onmouseover onmouseout coords="1254,498, 1309,499, 1327,516, 1311,541, 1274,553, 1231,539, 1234,508" href="https://wow.gamepedia.com/Thandol_Valley">
 
-            <area shape="poly" title="Vashj'ir" id="v" target="_blank" onmouseover onmouseout coords="1101,542, 1129,543, 1134,566, 1123,641, 1111,646, 1077,645, 1071,638, 1024,640,
-             1010,620, 1019,610, 1023,589, 1034,591, 1036,571, 1048,567, 1055,571, 1065,551, 1089,558, 1094,567" href="https://wow.gamepedia.com/Vashj%27ir">
+        <area shape="poly" title="Vashj'ir" id="v" target="_blank" onmouseover onmouseout coords="1101,542, 1129,543, 1134,566, 1123,641, 1111,646, 1077,645, 1071,638, 1024,640,
+            1010,620, 1019,610, 1023,589, 1034,591, 1036,571, 1048,567, 1055,571, 1065,551, 1089,558, 1094,567" href="https://wow.gamepedia.com/Vashj%27ir">
 
-            <area shape="poly" title="Twilight Highlands" id="th" target="_blank" onmouseover onmouseout coords="1307,498, 1358,494, 1374,513, 1381,557, 1360,575, 1342,576, 1331,585, 1315,555, 1299,545, 1322,529" href="https://wow.gamepedia.com/Twilight_Highlands">
+        <area shape="poly" title="Twilight Highlands" id="th" target="_blank" onmouseover onmouseout coords="1307,498, 1358,494, 1374,513, 1381,557, 1360,575, 1342,576, 1331,585, 1315,555, 1299,545, 1322,529" href="https://wow.gamepedia.com/Twilight_Highlands">
 
-            <area shape="poly" title="Dun Morogh" id="dm" target="_blank" onmouseover onmouseout coords="1231,542, 1217,547, 1202,541, 1182,548, 1170,545, 1154,554, 1161,572, 1177,599, 1176,611, 1189,618, 1217,609, 1222,598, 1267,594, 1279,579, 1275,557, 1253,547" href="https://wow.gamepedia.com/Dun_Morogh">
+        <area shape="poly" title="Dun Morogh" id="dm" target="_blank" onmouseover onmouseout coords="1231,542, 1217,547, 1202,541, 1182,548, 1170,545, 1154,554, 1161,572, 1177,599, 1176,611, 1189,618, 1217,609, 1222,598, 1267,594, 1279,579, 1275,557, 1253,547" href="https://wow.gamepedia.com/Dun_Morogh">
 
-            <area shape="poly" title="Loch Modan" id="lm" target="_blank" onmouseover onmouseout coords="1329,587, 1322,594, 1295,587, 1288,597, 1271,592, 1279,572, 1278,555, 1310,553" href="https://wow.gamepedia.com/Loch_Modan">
+        <area shape="poly" title="Loch Modan" id="lm" target="_blank" onmouseover onmouseout coords="1329,587, 1322,594, 1295,587, 1288,597, 1271,592, 1279,572, 1278,555, 1310,553" href="https://wow.gamepedia.com/Loch_Modan">
 
-            <area shape="poly" title="Badlands" id="bl" target="_blank" onmouseover onmouseout coords="1325,597, 1338,611, 1329,631, 1315,636, 1269,626, 1262,609, 1269,596, 1287,597, 1297,591" href="https://wow.gamepedia.com/Badlands">
+        <area shape="poly" title="Badlands" id="bl" target="_blank" onmouseover onmouseout coords="1325,597, 1338,611, 1329,631, 1315,636, 1269,626, 1262,609, 1269,596, 1287,597, 1297,591" href="https://wow.gamepedia.com/Badlands">
 
-            <area shape="poly" title="Searing Gorge" id="sg" target="_blank" onmouseover onmouseout coords="1221,601, 1219,613, 1213,625, 1223,630, 1241,626, 1266,626, 1261,610, 1267,598" href="https://wow.gamepedia.com/Searing_Gorge">
+        <area shape="poly" title="Searing Gorge" id="sg" target="_blank" onmouseover onmouseout coords="1221,601, 1219,613, 1213,625, 1223,630, 1241,626, 1266,626, 1261,610, 1267,598" href="https://wow.gamepedia.com/Searing_Gorge">
 
-            <area shape="poly" title="Burning Steppes" id="bs" target="_blank" onmouseover onmouseout coords="1218,630, 1177,626, 1166,635, 1173,637, 1183,632, 1206,635, 1224,641, 1231,654, 1249,661, 1263,653, 1297,657, 1298,635, 1264,626, 1253,623, 1237,627" href="https://wow.gamepedia.com/Burning_Steppes">
+        <area shape="poly" title="Burning Steppes" id="bs" target="_blank" onmouseover onmouseout coords="1218,630, 1177,626, 1166,635, 1173,637, 1183,632, 1206,635, 1224,641, 1231,654, 1249,661, 1263,653, 1297,657, 1298,635, 1264,626, 1253,623, 1237,627" href="https://wow.gamepedia.com/Burning_Steppes">
 
-            <area shape="poly" title="Red Ridge Mountains" id="rrm" target="_blank" onmouseover onmouseout coords="1299,657, 1310,665, 1310,685, 1269,689, 1255,683, 1253,667, 1267,657" href="https://wow.gamepedia.com/Redridge_Mountains">
+        <area shape="poly" title="Red Ridge Mountains" id="rrm" target="_blank" onmouseover onmouseout coords="1299,657, 1310,665, 1310,685, 1269,689, 1255,683, 1253,667, 1267,657" href="https://wow.gamepedia.com/Redridge_Mountains">
 
-            <area shape="poly" title="Elwynn Forest" id="ef" target="_blank" onmouseover onmouseout coords="1170,637, 1181,678, 1189,686, 1191,697, 1212,695, 1225,691, 1250,693, 1259,687, 1245,662, 1230,655, 1223,641, 1195,634" href="https://wow.gamepedia.com/Elwynn_Forest">
+        <area shape="poly" title="Elwynn Forest" id="ef" target="_blank" onmouseover onmouseout coords="1170,637, 1181,678, 1189,686, 1191,697, 1212,695, 1225,691, 1250,693, 1259,687, 1245,662, 1230,655, 1223,641, 1195,634" href="https://wow.gamepedia.com/Elwynn_Forest">
 
-            <area shape="poly" title="Westfall" id="wf" target="_blank" onmouseover onmouseout coords="1181,682, 1169,682, 1156,698, 1157,721, 1174,734, 1201,728, 1202,724, 1190,693" href="https://wow.gamepedia.com/Westfall">
+        <area shape="poly" title="Westfall" id="wf" target="_blank" onmouseover onmouseout coords="1181,682, 1169,682, 1156,698, 1157,721, 1174,734, 1201,728, 1202,724, 1190,693" href="https://wow.gamepedia.com/Westfall">
 
-            <area shape="poly" title="Duskwood" id="dw" target="_blank" onmouseover onmouseout coords="1194,701, 1203,724, 1249,721, 1250,694, 1221,694" href="https://wow.gamepedia.com/Duskwood">
+        <area shape="poly" title="Duskwood" id="dw" target="_blank" onmouseover onmouseout coords="1194,701, 1203,724, 1249,721, 1250,694, 1221,694" href="https://wow.gamepedia.com/Duskwood">
 
-            <area shape="poly" title="Swamp of Sorrows" id="ss" target="_blank" onmouseover onmouseout coords="1311,682, 1322,690, 1323,709, 1314,720, 1301,711, 1273,713, 1267,690, 1295,691" href="https://wow.gamepedia.com/Swamp_of_Sorrows">
+        <area shape="poly" title="Swamp of Sorrows" id="ss" target="_blank" onmouseover onmouseout coords="1311,682, 1322,690, 1323,709, 1314,720, 1301,711, 1273,713, 1267,690, 1295,691" href="https://wow.gamepedia.com/Swamp_of_Sorrows">
 
-            <area shape="poly" title="Deadwind Pass+Blasted Lands" id="dpbl" target="_blank" onmouseover onmouseout coords="1313,722, 1308,734, 1315,736, 1313,756, 1305,761, 1282,768, 1266,769, 1265,728, 1251,721, 1251,695, 1261,687, 1271,690,
-            1271,714, 1295,712" href="https://wow.gamepedia.com/Deadwind_Pass">
+        <area shape="poly" title="Deadwind Pass+Blasted Lands" id="dpbl" target="_blank" onmouseover onmouseout coords="1313,722, 1308,734, 1315,736, 1313,756, 1305,761, 1282,768, 1266,769, 1265,728, 1251,721, 1251,695, 1261,687, 1271,690,
+        1271,714, 1295,712" href="https://wow.gamepedia.com/Deadwind_Pass">
 
-            <area shape="poly" title="Stranglethorn Jungle" id="sj" target="_blank" onmouseover onmouseout coords="1268,771, 1239,784, 1226,780, 1210,762, 1197,767, 1173,747, 1176,735, 1202,731, 1229,729, 1249,726, 1264,735" href="https://wow.gamepedia.com/Stranglethorn_Jungle">
+        <area shape="poly" title="Stranglethorn Jungle" id="sj" target="_blank" onmouseover onmouseout coords="1268,771, 1239,784, 1226,780, 1210,762, 1197,767, 1173,747, 1176,735, 1202,731, 1229,729, 1249,726, 1264,735" href="https://wow.gamepedia.com/Stranglethorn_Jungle">
 
-            <area shape="poly" title="Cape of Stranglethorn" id="cos" target="_blank" onmouseover onmouseout coords="1197,767, 1189,781, 1191,805, 1202,823, 1223,817, 1223,805, 1209,805, 1225,781, 1210,762" href="https://wow.gamepedia.com/Cape_of_Stranglethorn">
+        <area shape="poly" title="Cape of Stranglethorn" id="cos" target="_blank" onmouseover onmouseout coords="1197,767, 1189,781, 1191,805, 1202,823, 1223,817, 1223,805, 1209,805, 1225,781, 1210,762" href="https://wow.gamepedia.com/Cape_of_Stranglethorn">
 
-            <area shape="poly" title="Kezan" id="k" target="_blank" onmouseover onmouseout coords="826,725, 853,724, 855,726, 874,725, 882,728, 884,741, 891,740, 905,777, 931,792, 943,812, 937,829, 943,852, 920,876, 895,887, 860,879, 830,880, 800,869, 798,856, 781,856, 
-            770,852, 765,837, 749,828, 747,798, 766,784, 770,773, 790,767, 786,743, 800,735, 799,728, 805,717, 814,716, 824,721" href="https://wow.gamepedia.com/Kezan">
+        <area shape="poly" title="Kezan" id="k" target="_blank" onmouseover onmouseout coords="826,725, 853,724, 855,726, 874,725, 882,728, 884,741, 891,740, 905,777, 931,792, 943,812, 937,829, 943,852, 920,876, 895,887, 860,879, 830,880, 800,869, 798,856, 781,856, 
+        770,852, 765,837, 749,828, 747,798, 766,784, 770,773, 790,767, 786,743, 800,735, 799,728, 805,717, 814,716, 824,721" href="https://wow.gamepedia.com/Kezan">
 
-            <area shape="poly" title="Deepholm+Maelstrom"  id="dhms" target="_blank" onmouseover onmouseout coords="773,416, 740,418, 718,408, 707,388, 710,364, 718,349, 734,339, 746,337, 782,340, 794,348, 800,364, 802,378, 794,403, 814,398, 893,402, 919,416, 936,452, 936,500, 914,528, 
-            885,539, 823,542, 782,520, 758,464, 762,436" href="https://wow.gamepedia.com/Deepholm">
-            
-            <area shape ="poly" title="Bloodmyst Isle" id="BI" target="_blank" onmouseover onmouseout coords="231,327,240,316,248,316,249,316,259,318,265,309,279,315,278,327,289,342,285,349,271,349,276,358,275,360,264,370,252,370,235,373,217,359,213,360,210,343,209,329,215,319,223,319,224,321" href="https://wow.gamepedia.com/Bloodmyst_Isle" >
-            <area shape="poly" title="Azuremyst Isle"  id="AI"target="_blank" onmouseover onmouseout coords="264,370,283,376,280,392,290,380,294,387,312,388,312,408,305,419,298,419,287,418,250,424,245,422,236,432,226,428,229,416,241,413,243,398,236,396,236,394,232,384,244,378,253,382,259,372"href="https://wow.gamepedia.com/Azuremyst_Isle" >
-            <area shape="poly" title="Teldrassil" id="TS"  target="_blank" onmouseover onmouseout coords="372,262,391,256,394,260,402,263,404,270,415,275,413,284,417,291,410,312,409,319,405,326,388,326,381,335,374,327,357,328,350,325,343,328,337,320,336,313,329,317,327,307,331,303,323,293,330,282,333,273,349,270,344,265,358,255" href="https://wow.gamepedia.com/Teldrassil">
-            <area shape="poly" title="Winterspring"  id="WS" target="_blank" onmouseover onmouseout coords="439,334,445,342,449,353,451,364,454,385,458,388,491,388,499,392,500,398,510,407,522,414,531,408,543,388,537,372,536,367,541,359,545,344,532,327,493,313" href="https://wow.gamepedia.com/Winterspring">
-            <area shape="poly" title="Darkshore"  id="DS" target="_blank" onmouseover onmouseout coords="438,338,445,345,450,360,450,360,424,371,412,393,411,402,402,417,400,428,393,431,377,425,378,386,378,364,387,346" href="https://wow.gamepedia.com/Darkshore">
-            <area shape="poly" title="Felwood"  id="FW" target="_blank" onmouseover onmouseout coords="424,371,412,393,411,402,402,417,400,428,408,437,409,438,410,443,420,447,432,446,441,439,443,435,443,430,435,424,430,414,429,400,440,387,453,383,452,385,449,364" href="https://wow.gamepedia.com/Felwood" >
-            <area shape="poly" title="Mount Hyjal"  id="MH" target="_blank" onmouseover onmouseout coords="454,385,458,388,491,388,499,392,500,398,510,407,522,414,522,424,519,433,510,436,494,439,476,446,457,444,444,430,438,424,429,410,429,402,436,390,443,387,454,384,454,385" href="https://wow.gamepedia.com/Mount_Hyjal">
-            <area shape="poly" title="Azshara"  id="AS" target="_blank" onmouseover onmouseout coords="523,414,524,422,519,434,497,439,489,476,494,500,488,524,495,548,507,559,525,570,536,559,539,549,536,541,525,544,521,492,566,481,577,473,604,452,602,453,600,436,588,414,557,405,530,410" href="https://wow.gamepedia.com/Azshara"  >
-            <area shape="poly" title="Ashenvale"  id="AV" target="_blank" onmouseover onmouseout coords="370,432,380,427,395,431,401,428,409,437,411,443,424,447,428,446,438,443,439,441,445,435,455,443,463,447,469,448,481,444,488,441,494,441,491,462,486,480,489,491,439,499,431,488,421,485,404,489,378,462,359,452,370,430" href="https://wow.gamepedia.com/Ashenvale">
-            <area shape="poly" title="Stonetalon Mountains"  id="SM" target="_blank" onmouseover onmouseout coords="329,460,333,478,343,489,348,500,343,516,346,521,383,522,400,532,417,534,425,529,430,514,433,509,441,501,436,492,422,485,414,490,402,488,384,471,373,457,364,455,359,452,346,451" href="https://wow.gamepedia.com/Stonetalon_Mountains">
-            <area shape="poly" title="Northern Barrens"  id="NB" target="_blank" onmouseover onmouseout coords="434,509,429,520,425,529,435,532,447,555,461,561,463,562,467,568,495,569,495,562,489,555,495,546,489,533,487,522,490,509,491,504,492,502,492,493,476,493,471,494,468,497,440,501,433,508" href="https://wow.gamepedia.com/Northern_Barrens">
-            <area shape="poly" title="Desolace"  id="DS" target="_blank" onmouseover onmouseout coords="331,522,346,521,388,525,398,532,402,533,382,548,382,559,387,565,391,568,389,576,393,583,393,588,323,589,322,569,326,539" href="https://wow.gamepedia.com/Desolace">
-            <area shape="poly" title="Feralas"  id="FS" target="_blank" onmouseover onmouseout coords="323,589,323,606,327,620,329,622,328,629,319,628,310,635,311,648,314,666,317,677,325,682,343,676,352,669,356,668,370,671,418,665,413,661,412,651,412,647,414,640,415,623,410,621,411,608,403,607,394,602,393,589,392,587" href="https://wow.gamepedia.com/Feralas">
-            <area shape="poly" title="Mulgore"  id="MG" target="_blank" onmouseover onmouseout coords="405,535,386,551,384,558,392,566,389,577,395,586,395,599,396,602,400,608,424,595,432,595,441,598,439,581,435,568,434,560,415,534,403,535" href="https://wow.gamepedia.com/Mulgore">
-            <area shape="poly" title="Silithus" id="ST" target="_blank" onmouseover onmouseout coords="344,676,345,682,337,697,335,712,333,716,330,727,339,729,349,722,415,722,401,702,404,684,406,681,426,670,418,664,378,673,355,667,352,670" href="https://wow.gamepedia.com/Silithus">
-            <area shape="poly" title="Ahn'Qiraj"  id="AQ" target="_blank" onmouseover onmouseout coords="338,730,340,735,330,739,326,749,333,764,337,771,362,781,391,803,415,804,454,805,463,801,458,791,473,779,480,760,465,760,451,755,451,746,449,736,447,727,418,723,354,722,345,726" href="https://wow.gamepedia.com/Ahn'Qiraj">
-            <area shape="circle" title="Un'Goro Crater"  id="UC" target="_blank" onmouseover onmouseout coords="431,700,31" href="https://wow.gamepedia.com/Un'Goro Crater">
-            <area shape="poly" title="Tanaris"  id="TN" target="_blank" onmouseover onmouseout coords="465,687,483,692,518,686,521,699,531,713,529,722,518,730,502,770,494,774,481,760,467,761,452,754,449,732,446,727,455,719,458,719,461,707,464,700,461,689" href="https://wow.gamepedia.com/Tanaris">
-            <area shape="poly" title="Southern Barrens"  id="SBS" target="_blank" onmouseover onmouseout coords="419,535,432,554,431,568,438,580,441,581,443,595,433,599,425,595,414,601,411,612,411,621,420,624,429,633,446,641,480,655,494,656,509,660,514,664,516,654,508,649,501,640,480,647,461,633,461,620,456,613,462,600,460,592,467,583,491,586,503,577,505,565,492,553,495,568,468,569,460,562,448,557,437,535,427,529" href="https://wow.gamepedia.com/Southern_Barrens">
-            <area shape="poly" title="Thousand Needles"  id="TN" target="_blank" onmouseover onmouseout coords="418,625,416,626,416,641,412,647,415,659,426,668,441,673,451,674,457,679,466,686,470,688,481,692,502,688,514,684,521,676,517,669,509,665,499,661,484,657,449,642,427,635,421,626" href="https://wow.gamepedia.com/Thousand_Needles">
-            <area shape="poly" title="Dustwallow Marsh"  id="DW" target="_blank" onmouseover onmouseout coords="514,581,505,580,488,589,476,585,468,584,462,595,463,600,459,616,461,621,460,630,463,632,480,648,492,645,498,640,508,649,517,653,517,630,527,624,522,608,525,587" href="https://wow.gamepedia.com/Dustwallow_Marsh">
-            <area shape="poly" title="The Lost Isles"  target="_blank" onmouseover onmouseout coords="634,486,643,481,659,483,667,484,677,477,680,483,686,488,689,494,691,513,687,522,663,540,647,539,628,537,609,519,611,513,631,499" href="https://wow.gamepedia.com/The_Lost_Isles">
-            <area shape="poly" title="Borean Tundra" id="BT" target="_blank" onmouseover onmouseout coords="667,198,671,195,660,200,655,202,647,201,638,199,622,221,621,235,654,297,674,310,691,312,704,314,708,309,718,290,717,281,733,276,753,272,771,266,776,250,775,230,770,217,743,202,739,205,741,205,718,211,707,204,688,202,677,197" href="https://wow.gamepedia.com/Borean_Tundra">
-            <area shape="poly" title="Sholazar Basin" id="SB" target="_blank" onmouseover onmouseout coords="715,125,679,151,677,162,674,184,676,196,677,195,687,199,698,201,706,202,718,208,733,205,743,200,747,202,757,185,765,179,765,175,772,172,768,170,765,160,748,150,739,136,721,131" href="https://wow.gamepedia.com/Sholazar_Basin">
-            <area shape="poly" title="Wintergrasp" id="WG" target="_blank" onmouseover onmouseout coords="774,171,772,175,767,184,760,188,756,192,750,202,773,214,781,218,806,209,812,207,813,192,807,183,799,176,787,170,780,170" href="https://wow.gamepedia.com/Wintergrasp">
-            <area shape="poly" title="Icecrown" id="IC" target="_blank" onmouseover onmouseout coords="714,94,775,62,804,54,823,29,829,19,837,19,840,35,846,61,847,74,857,92,850,104,852,113,855,117,859,139,854,146,843,146,833,163,827,175,814,185,807,178,798,174,787,170,773,170,768,166,764,155,749,146,740,137,723,131,721,126,711,123,710,106" href="https://wow.gamepedia.com/Icecrown">
-            <area shape="poly" title="Storm Peaks" id="SP"target="_blank" onmouseover onmouseout coords="841,18,842,38,846,60,859,89,853,103,854,112,857,126,858,139,857,147,861,151,865,152,871,154,876,159,884,162,895,164,905,163,907,169,917,159,934,151,941,151,945,148,960,142,972,139,988,139,996,139,1002,119,1005,109,997,93,976,71,977,73,952,60,943,61,938,48,915,29,895,28,873,46,869,60,856,60,851,46,853,36,858,26,857,17" href="https://wow.gamepedia.com/Storm_Peaks">
-            <area shape="poly" title="Dragonblight" id="DB"target="_blank" onmouseover onmouseout coords="775,219,776,244,783,245,813,272,828,269,853,267,858,278,880,275,905,273,916,262,920,228,915,221,914,199,909,194,902,195,897,193,878,189,861,182,858,184,848,188,838,184,831,180,825,182,815,190" href="https://wow.gamepedia.com/Dragonblight">
-            <area shape="poly" title="Crystalsong Forest" id="CF"target="_blank" onmouseover onmouseout  coords="845,147,833,170,832,176,840,181,848,184,858,181,866,181,878,185,882,188,898,191,904,195,908,190,912,181,905,166,881,162,877,158,872,153,862,156,855,147" href="https://wow.gamepedia.com/Crystalsong_Forest">
-            <area shape="poly" title="Zul'Drak" id="ZD" target="_blank" onmouseover onmouseout coords="912,167,915,181,914,188,912,193,915,211,919,214,943,219,963,217,980,200,986,196,992,192,1000,188,1005,185,1013,182,1014,183,1018,174,1024,166,1040,125,1020,105,1005,121,1003,122,990,141,973,140,943,138,940,149,925,156,916,161" href="https://wow.gamepedia.com/Zul'Drak">
-            <area shape="poly" title="Grizzly Hills" id="GH" target="_blank" onmouseover onmouseout coords="1026,168,1016,175,1017,180,1005,184,1001,192,991,192,976,201,963,217,961,219,921,218,916,215,920,244,919,263,908,274,924,291,957,270,969,250,980,237,984,232,1003,232,1005,237,1016,242,1019,234,1027,231,1038,229,1054,210,1053,194,1050,190,1038,191,1036,176" href="https://wow.gamepedia.com/Grizzly_Hills">
-            <area shape="poly" title="Howling Fjord" id="HF" target="_blank" onmouseover onmouseout coords="979,236,958,270,955,283,958,326,964,339,1028,367,1071,337,1078,317,1067,261,1044,234,1041,229,1024,233,1016,241,1005,240,1002,234,992,235" href="https://wow.gamepedia.com/Howling_Fjord">
-        </map>
-
-        <div class="top-left" id="coords"></div>
-
-        <script>
-            function showCoords(event) {
-                var x = event.offsetX;
-                var y = event.offsetY;
-                var coords = "X coords: " + x + ", Y coords: " + y;
-                document.getElementById("coords").innerHTML = coords;
-            }
-        </script>
+        <area shape="poly" title="Deepholm+Maelstrom"  id="dhms" target="_blank" onmouseover onmouseout coords="773,416, 740,418, 718,408, 707,388, 710,364, 718,349, 734,339, 746,337, 782,340, 794,348, 800,364, 802,378, 794,403, 814,398, 893,402, 919,416, 936,452, 936,500, 914,528, 
+        885,539, 823,542, 782,520, 758,464, 762,436" href="https://wow.gamepedia.com/Deepholm">
+        
+        <area shape ="poly" title="Bloodmyst Isle" id="BI" target="_blank" onmouseover onmouseout coords="231,327,240,316,248,316,249,316,259,318,265,309,279,315,278,327,289,342,285,349,271,349,276,358,275,360,264,370,252,370,235,373,217,359,213,360,210,343,209,329,215,319,223,319,224,321" href="https://wow.gamepedia.com/Bloodmyst_Isle" >
+        <area shape="poly" title="Azuremyst Isle"  id="AI"target="_blank" onmouseover onmouseout coords="264,370,283,376,280,392,290,380,294,387,312,388,312,408,305,419,298,419,287,418,250,424,245,422,236,432,226,428,229,416,241,413,243,398,236,396,236,394,232,384,244,378,253,382,259,372"href="https://wow.gamepedia.com/Azuremyst_Isle" >
+        <area shape="poly" title="Teldrassil" id="TS"  target="_blank" onmouseover onmouseout coords="372,262,391,256,394,260,402,263,404,270,415,275,413,284,417,291,410,312,409,319,405,326,388,326,381,335,374,327,357,328,350,325,343,328,337,320,336,313,329,317,327,307,331,303,323,293,330,282,333,273,349,270,344,265,358,255" href="https://wow.gamepedia.com/Teldrassil">
+        <area shape="poly" title="Winterspring"  id="WS" target="_blank" onmouseover onmouseout coords="439,334,445,342,449,353,451,364,454,385,458,388,491,388,499,392,500,398,510,407,522,414,531,408,543,388,537,372,536,367,541,359,545,344,532,327,493,313" href="https://wow.gamepedia.com/Winterspring">
+        <area shape="poly" title="Darkshore"  id="DS" target="_blank" onmouseover onmouseout coords="438,338,445,345,450,360,450,360,424,371,412,393,411,402,402,417,400,428,393,431,377,425,378,386,378,364,387,346" href="https://wow.gamepedia.com/Darkshore">
+        <area shape="poly" title="Felwood"  id="FW" target="_blank" onmouseover onmouseout coords="424,371,412,393,411,402,402,417,400,428,408,437,409,438,410,443,420,447,432,446,441,439,443,435,443,430,435,424,430,414,429,400,440,387,453,383,452,385,449,364" href="https://wow.gamepedia.com/Felwood" >
+        <area shape="poly" title="Mount Hyjal"  id="MH" target="_blank" onmouseover onmouseout coords="454,385,458,388,491,388,499,392,500,398,510,407,522,414,522,424,519,433,510,436,494,439,476,446,457,444,444,430,438,424,429,410,429,402,436,390,443,387,454,384,454,385" href="https://wow.gamepedia.com/Mount_Hyjal">
+        <area shape="poly" title="Azshara"  id="AS" target="_blank" onmouseover onmouseout coords="523,414,524,422,519,434,497,439,489,476,494,500,488,524,495,548,507,559,525,570,536,559,539,549,536,541,525,544,521,492,566,481,577,473,604,452,602,453,600,436,588,414,557,405,530,410" href="https://wow.gamepedia.com/Azshara"  >
+        <area shape="poly" title="Ashenvale"  id="AV" target="_blank" onmouseover onmouseout coords="370,432,380,427,395,431,401,428,409,437,411,443,424,447,428,446,438,443,439,441,445,435,455,443,463,447,469,448,481,444,488,441,494,441,491,462,486,480,489,491,439,499,431,488,421,485,404,489,378,462,359,452,370,430" href="https://wow.gamepedia.com/Ashenvale">
+        <area shape="poly" title="Stonetalon Mountains"  id="SM" target="_blank" onmouseover onmouseout coords="329,460,333,478,343,489,348,500,343,516,346,521,383,522,400,532,417,534,425,529,430,514,433,509,441,501,436,492,422,485,414,490,402,488,384,471,373,457,364,455,359,452,346,451" href="https://wow.gamepedia.com/Stonetalon_Mountains">
+        <area shape="poly" title="Northern Barrens"  id="NB" target="_blank" onmouseover onmouseout coords="434,509,429,520,425,529,435,532,447,555,461,561,463,562,467,568,495,569,495,562,489,555,495,546,489,533,487,522,490,509,491,504,492,502,492,493,476,493,471,494,468,497,440,501,433,508" href="https://wow.gamepedia.com/Northern_Barrens">
+        <area shape="poly" title="Desolace"  id="DS" target="_blank" onmouseover onmouseout coords="331,522,346,521,388,525,398,532,402,533,382,548,382,559,387,565,391,568,389,576,393,583,393,588,323,589,322,569,326,539" href="https://wow.gamepedia.com/Desolace">
+        <area shape="poly" title="Feralas"  id="FS" target="_blank" onmouseover onmouseout coords="323,589,323,606,327,620,329,622,328,629,319,628,310,635,311,648,314,666,317,677,325,682,343,676,352,669,356,668,370,671,418,665,413,661,412,651,412,647,414,640,415,623,410,621,411,608,403,607,394,602,393,589,392,587" href="https://wow.gamepedia.com/Feralas">
+        <area shape="poly" title="Mulgore"  id="MG" target="_blank" onmouseover onmouseout coords="405,535,386,551,384,558,392,566,389,577,395,586,395,599,396,602,400,608,424,595,432,595,441,598,439,581,435,568,434,560,415,534,403,535" href="https://wow.gamepedia.com/Mulgore">
+        <area shape="poly" title="Silithus" id="ST" target="_blank" onmouseover onmouseout coords="344,676,345,682,337,697,335,712,333,716,330,727,339,729,349,722,415,722,401,702,404,684,406,681,426,670,418,664,378,673,355,667,352,670" href="https://wow.gamepedia.com/Silithus">
+        <area shape="poly" title="Ahn'Qiraj"  id="AQ" target="_blank" onmouseover onmouseout coords="338,730,340,735,330,739,326,749,333,764,337,771,362,781,391,803,415,804,454,805,463,801,458,791,473,779,480,760,465,760,451,755,451,746,449,736,447,727,418,723,354,722,345,726" href="https://wow.gamepedia.com/Ahn'Qiraj">
+        <area shape="circle" title="Un'Goro Crater"  id="UC" target="_blank" onmouseover onmouseout coords="431,700,31" href="https://wow.gamepedia.com/Un'Goro Crater">
+        <area shape="poly" title="Tanaris"  id="TN" target="_blank" onmouseover onmouseout coords="465,687,483,692,518,686,521,699,531,713,529,722,518,730,502,770,494,774,481,760,467,761,452,754,449,732,446,727,455,719,458,719,461,707,464,700,461,689" href="https://wow.gamepedia.com/Tanaris">
+        <area shape="poly" title="Southern Barrens"  id="SBS" target="_blank" onmouseover onmouseout coords="419,535,432,554,431,568,438,580,441,581,443,595,433,599,425,595,414,601,411,612,411,621,420,624,429,633,446,641,480,655,494,656,509,660,514,664,516,654,508,649,501,640,480,647,461,633,461,620,456,613,462,600,460,592,467,583,491,586,503,577,505,565,492,553,495,568,468,569,460,562,448,557,437,535,427,529" href="https://wow.gamepedia.com/Southern_Barrens">
+        <area shape="poly" title="Thousand Needles"  id="TN" target="_blank" onmouseover onmouseout coords="418,625,416,626,416,641,412,647,415,659,426,668,441,673,451,674,457,679,466,686,470,688,481,692,502,688,514,684,521,676,517,669,509,665,499,661,484,657,449,642,427,635,421,626" href="https://wow.gamepedia.com/Thousand_Needles">
+        <area shape="poly" title="Dustwallow Marsh"  id="DW" target="_blank" onmouseover onmouseout coords="514,581,505,580,488,589,476,585,468,584,462,595,463,600,459,616,461,621,460,630,463,632,480,648,492,645,498,640,508,649,517,653,517,630,527,624,522,608,525,587" href="https://wow.gamepedia.com/Dustwallow_Marsh">
+        <area shape="poly" title="The Lost Isles"  target="_blank" onmouseover onmouseout coords="634,486,643,481,659,483,667,484,677,477,680,483,686,488,689,494,691,513,687,522,663,540,647,539,628,537,609,519,611,513,631,499" href="https://wow.gamepedia.com/The_Lost_Isles">
+        <area shape="poly" title="Borean Tundra" id="BT" target="_blank" onmouseover onmouseout coords="667,198,671,195,660,200,655,202,647,201,638,199,622,221,621,235,654,297,674,310,691,312,704,314,708,309,718,290,717,281,733,276,753,272,771,266,776,250,775,230,770,217,743,202,739,205,741,205,718,211,707,204,688,202,677,197" href="https://wow.gamepedia.com/Borean_Tundra">
+        <area shape="poly" title="Sholazar Basin" id="SB" target="_blank" onmouseover onmouseout coords="715,125,679,151,677,162,674,184,676,196,677,195,687,199,698,201,706,202,718,208,733,205,743,200,747,202,757,185,765,179,765,175,772,172,768,170,765,160,748,150,739,136,721,131" href="https://wow.gamepedia.com/Sholazar_Basin">
+        <area shape="poly" title="Wintergrasp" id="WG" target="_blank" onmouseover onmouseout coords="774,171,772,175,767,184,760,188,756,192,750,202,773,214,781,218,806,209,812,207,813,192,807,183,799,176,787,170,780,170" href="https://wow.gamepedia.com/Wintergrasp">
+        <area shape="poly" title="Icecrown" id="IC" target="_blank" onmouseover onmouseout coords="714,94,775,62,804,54,823,29,829,19,837,19,840,35,846,61,847,74,857,92,850,104,852,113,855,117,859,139,854,146,843,146,833,163,827,175,814,185,807,178,798,174,787,170,773,170,768,166,764,155,749,146,740,137,723,131,721,126,711,123,710,106" href="https://wow.gamepedia.com/Icecrown">
+        <area shape="poly" title="Storm Peaks" id="SP"target="_blank" onmouseover onmouseout coords="841,18,842,38,846,60,859,89,853,103,854,112,857,126,858,139,857,147,861,151,865,152,871,154,876,159,884,162,895,164,905,163,907,169,917,159,934,151,941,151,945,148,960,142,972,139,988,139,996,139,1002,119,1005,109,997,93,976,71,977,73,952,60,943,61,938,48,915,29,895,28,873,46,869,60,856,60,851,46,853,36,858,26,857,17" href="https://wow.gamepedia.com/Storm_Peaks">
+        <area shape="poly" title="Dragonblight" id="DB"target="_blank" onmouseover onmouseout coords="775,219,776,244,783,245,813,272,828,269,853,267,858,278,880,275,905,273,916,262,920,228,915,221,914,199,909,194,902,195,897,193,878,189,861,182,858,184,848,188,838,184,831,180,825,182,815,190" href="https://wow.gamepedia.com/Dragonblight">
+        <area shape="poly" title="Crystalsong Forest" id="CF"target="_blank" onmouseover onmouseout  coords="845,147,833,170,832,176,840,181,848,184,858,181,866,181,878,185,882,188,898,191,904,195,908,190,912,181,905,166,881,162,877,158,872,153,862,156,855,147" href="https://wow.gamepedia.com/Crystalsong_Forest">
+        <area shape="poly" title="Zul'Drak" id="ZD" target="_blank" onmouseover onmouseout coords="912,167,915,181,914,188,912,193,915,211,919,214,943,219,963,217,980,200,986,196,992,192,1000,188,1005,185,1013,182,1014,183,1018,174,1024,166,1040,125,1020,105,1005,121,1003,122,990,141,973,140,943,138,940,149,925,156,916,161" href="https://wow.gamepedia.com/Zul'Drak">
+        <area shape="poly" title="Grizzly Hills" id="GH" target="_blank" onmouseover onmouseout coords="1026,168,1016,175,1017,180,1005,184,1001,192,991,192,976,201,963,217,961,219,921,218,916,215,920,244,919,263,908,274,924,291,957,270,969,250,980,237,984,232,1003,232,1005,237,1016,242,1019,234,1027,231,1038,229,1054,210,1053,194,1050,190,1038,191,1036,176" href="https://wow.gamepedia.com/Grizzly_Hills">
+        <area shape="poly" title="Howling Fjord" id="HF" target="_blank" onmouseover onmouseout coords="979,236,958,270,955,283,958,326,964,339,1028,367,1071,337,1078,317,1067,261,1044,234,1041,229,1024,233,1016,241,1005,240,1002,234,992,235" href="https://wow.gamepedia.com/Howling_Fjord">
+    </map>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
         <script>
